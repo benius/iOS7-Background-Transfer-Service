@@ -9,8 +9,8 @@
 #import "LCBViewController.h"
 
 
-
-NSString * const FILE_TO_DOWNLOAD = @"http://www.wswd.net/testdownloadfiles/10MB.zip";
+NSString * const FILE_TO_DOWNLOAD = @"https://filelug.com/resources/play_sensory.mp4";
+//NSString * const FILE_TO_DOWNLOAD = @"http://www.wswd.net/testdownloadfiles/10MB.zip";
 
 @implementation LCBViewController
 
@@ -73,7 +73,7 @@ NSString * const FILE_TO_DOWNLOAD = @"http://www.wswd.net/testdownloadfiles/10MB
 	self.downloadButton.enabled = YES;
 	self.statusLabel.text = url;
 	self.downloadLabel.text = [NSString stringWithFormat:@"Download completed."];
-	self.downloadProgressView.Hidden = YES;
+	self.downloadProgressView.hidden = YES;
 }
 
 -(void)downloadErrorForFile:(NSString *)url

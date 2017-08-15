@@ -46,7 +46,7 @@ static NSMutableDictionary *_helpers;
 			// static predicate requirement.
 			if (_session == nil)
 			{
-				_session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration backgroundSessionConfiguration:identifier] delegate:self delegateQueue:nil];
+				_session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:identifier] delegate:self delegateQueue:nil];
 				[_helpers setObject:self forKey:identifier];
 			}
 		};
